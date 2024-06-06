@@ -1,26 +1,25 @@
-# Documentação do Projeto XYZ
+# OpenPersonalFinanceAPI 
 
-## Descrição do Projeto
+## Project description
 
-O projeto XYZ é uma aplicação web que permite aos usuários realizar [descrever a funcionalidade principal do projeto]. É desenvolvido com o objetivo de [inserir objetivos do projeto].
+The OpenPersonalFinanceAPI provides services for personal finance management, allowing users to track their expenses, income, and conduct basic analysis of their financial habits. Developers can use this API to create applications that help users maintain better control over their finances.
 
-## Documentação
+Feel free to clone this repository and use it in your own projects. The idea behind this project is to create a template that can be customized and utilized in various ways based on this project, as well as being a personal project for practicing programming and learning new technologies.
 
-A documentação completa do projeto XYZ está disponível [aqui](https://exemplo.com/documentacao).
+## Documentation
 
-## Funcionalidades
+<!-- A documentação de API completa do projeto está disponível [aqui](https://exemplo.com/documentacao). -->
 
-A seguir estão as principais funcionalidades do projeto XYZ:
+You can view the complete API documentation of the project after running it locally. Please run the project and access the Swagger documentation. [http://localhost/api/documentation](http://localhost/api/documentation).
 
-1. **Cadastro de Usuários:** Os usuários podem criar uma conta no sistema fornecendo as informações necessárias.
-2. **Login e Autenticação:** Os usuários podem fazer login no sistema usando suas credenciais e receber um token de acesso.
-3. **Recuperação de Senha:** Os usuários têm a opção de recuperar sua senha por e-mail, seguindo um processo seguro.
-4. **Visualização de Dados:** Os usuários podem visualizar [descrever os tipos de dados que podem ser visualizados].
-5. **Edição de Dados:** Os usuários têm permissão para editar seus dados pessoais e outras informações relacionadas.
-6. **[Funcionalidade Adicional 1]:** Descrição da funcionalidade adicional.
-7. **[Funcionalidade Adicional 2]:** Descrição da funcionalidade adicional.
+## Functionalities
 
-## Tecnologias Utilizadas
+Here are the main features of the OpenPersonalFinanceAPI:
+
+1. **User Registration:** Users can create an account in the system by providing the necessary information.
+2. **Login and Authentication:** Users can log into the system using their credentials and receive an access token.
+
+<!-- ## Tecnologias Utilizadas
 
 O projeto XYZ utiliza as seguintes tecnologias e práticas:
 
@@ -29,9 +28,9 @@ O projeto XYZ utiliza as seguintes tecnologias e práticas:
 3. **Microserviços:** Algumas funcionalidades específicas são implementadas como microserviços independentes para garantir escalabilidade e modularidade.
 4. **Framework MVC:** O projeto é construído usando um framework MVC (Model-View-Controller) para separar a lógica de negócios, a interface do usuário e a manipulação de dados.
 5. **API RESTful:** A comunicação entre o frontend e o backend é realizada através de uma API RESTful, seguindo as melhores práticas de design de API.
-6. **Testes Automatizados:** O projeto possui uma suíte de testes automatizados para garantir a estabilidade e a qualidade do código.
+6. **Testes Automatizados:** O projeto possui uma suíte de testes automatizados para garantir a estabilidade e a qualidade do código. -->
 
-## Requisitos
+<!-- ## Requisitos
 
 Antes de executar o projeto XYZ em seu ambiente de desenvolvimento, certifique-se de ter os seguintes requisitos atendidos:
 
@@ -43,17 +42,19 @@ Antes de executar o projeto XYZ em seu ambiente de desenvolvimento, certifique-s
 
 Para instalar e configurar o projeto XYZ localmente, siga as etapas abaixo:
 
-1. Clone este repositório em sua máquina local:
+1. Clone este repositório em sua máquina local: -->
 
-## Recursos Externos
+## External Resources
 
-Durante o desenvolvimento do projeto XYZ, foram utilizados os seguintes recursos externos:
+During the development of the OpenPersonalFinanceAPI, the following external resources were used:
 
-- [Biblioteca X](https://exemplo.com/biblioteca-x): Descrição da biblioteca X.
+<!-- - [Biblioteca X](https://exemplo.com/biblioteca-x): Descrição da biblioteca X.
 - [API de Pagamento Y](https://exemplo.com/api-pagamento-y): Integração com a API de pagamento Y para processar transações financeiras.
-- [Framework Z](https://exemplo.com/framework-z): Utilização do framework Z para agilizar o desenvolvimento.
+- [Framework Z](https://exemplo.com/framework-z): Utilização do framework Z para agilizar o desenvolvimento. -->
+- [Swagger](https://swagger.io/): Swagger is used to document APIs.
 
-## Licença
 
-O projeto XYZ é licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](https://github.com/seu-usuario/projeto-xyz/blob/main/LICENSE) para obter mais informações.  
+<!-- ## Licença
+
+O projeto XYZ é licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](https://github.com/seu-usuario/projeto-xyz/blob/main/LICENSE) para obter mais informações.   -->
 
