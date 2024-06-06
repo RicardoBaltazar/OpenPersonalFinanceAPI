@@ -13,12 +13,10 @@ class Login
     {
         $user = User::where('email', $data['email'])->first();
 
-        if (!$user || !Hash::check($data['password'], $user->password)) {
-            throw new HttpException(401, 'Invalid credentials.');
-        }
+        $this->validateCredentials($data, $user);
 
         try {
-            $token = $user->createToken('auth_token')->plainTextToken;
+            $token = $this->getToken($user);
 
             return [
                 'success' => true,
@@ -29,5 +27,17 @@ class Login
         } catch (Exception $e) {
             throw new HttpException(500, 'Failed to login.');
         }
+    }
+
+    private function validateCredentials(array $data, object $user): void
+    {
+        if (!$user || !Hash::check($data['password'], $user->password)) {
+            throw new HttpException(401, 'Invalid credentials.');
+        }
+    }
+
+    private function getToken(object $user): string
+    {
+        return $user->createToken('auth_token')->plainTextToken;
     }
 }
