@@ -3,6 +3,8 @@
 namespace App\Actions\Category;
 
 use App\Models\Category;
+use Exception;
+use Illuminate\Support\Facades\Log;
 
 class ListCategories
 {
@@ -15,6 +17,11 @@ class ListCategories
 
     public function execute()
     {
-        return $this->category->all('name');
+        try {
+            return $this->category->all('name');
+        } catch (\Exception $th) {
+            Log::error('Error fetching categories: ' . $th->getMessage());
+            throw new Exception('Unable to list categories');
+        }
     }
 }
