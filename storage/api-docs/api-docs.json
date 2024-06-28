@@ -238,6 +238,29 @@
                     }
                 ]
             }
+        },
+        "/api/expanses": {
+            "get": {
+                "tags": [
+                    "Expanses"
+                ],
+                "summary": "Expanses listing",
+                "description": "Endpoint to list user expanses",
+                "operationId": "03588e336094bae25f30e0a365c42e0b",
+                "responses": {
+                    "200": {
+                        "description": "User expanses listing successfully"
+                    },
+                    "500": {
+                        "description": "Failed to list user expanses"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
         }
     },
     "components": {

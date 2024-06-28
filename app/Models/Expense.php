@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Expanse extends Model
+class Expense extends Model
 {
     use HasFactory;
 
@@ -15,6 +15,14 @@ class Expanse extends Model
         'value',
         'date'
     ];
+
+    public function scopeFindByUserId($query, $atributes)
+    {
+        return $query
+            ->select()
+            ->where('user_id', '=', $atributes)
+            ->get();
+    }
 
     public function user()
     {
