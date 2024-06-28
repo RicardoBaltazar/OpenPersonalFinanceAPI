@@ -2,30 +2,24 @@
 
 namespace App\Http\Controllers\Expanse;
 
+use App\Actions\Expense\GetUserExpenses;
 use App\Http\Controllers\Controller;
-use App\Models\Expanse;
-use App\Models\Expense;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class ExpensesController extends Controller
 {
-    private $expanses;
+    private $getUserExpenses;
 
-    public function __construct(Expense $expanses)
+    public function __construct(GetUserExpenses $getUserExpenses)
     {
-        $this->expanses = $expanses;
+        $this->getUserExpenses = $getUserExpenses;
     }
     public function index()
     {
         try {
-            $user = Auth::user();
-            $expenses = $this->expanses->findByUserId($user->id);
-
-            return response()->json([
-                'data' => $expenses
-            ]);
+            $response = $this->getUserExpenses->execute();
+            return response()->json($response);
         } catch (HttpException $e) {
             return response()->json(['error' => $e->getMessage()], $e->getStatusCode());
         } catch (\Exception $e) {
